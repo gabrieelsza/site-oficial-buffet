@@ -19,7 +19,8 @@ function initSwiper() {
         breakpoints: {
             320: {
                 slidesPerView: 1.5,
-                spaceBetween: 20
+                spaceBetween: 20,
+                centeredSlides: true,
             },
             // when window width is >= 480px
             800: {

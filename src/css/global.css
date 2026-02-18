@@ -53,3 +53,7 @@ a {
             white-space: nowrap;
         }
     }
+
+#serviceForm {
+    padding: 1rem 1rem;
+}
