@@ -1,0 +1,55 @@
+:root {
+  /* Barber Shop Colors */
+    --color-bg-dark: #002C22;
+    --color-primary-light: #FDF9DC;
+    --color-accent-orange: #F56013;
+    --color-white: #FFFFFF;
+
+  /* Typography */
+    --font-headings: "Holtwood One SC", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-ui: "Lexend", sans-serif;
+    --font-script: "Aguafina Script", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+ .division-icons {
+        background-color: var(--color-primary-light);
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        justify-content: space-between;
+        margin: 3rem 0;
+    }
+    
+    .division-name {
+        background-color: var(--color-primary-light);
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        padding: 2rem;
+        width: 100%;
+        overflow: hidden;
+        margin: 3rem 0;
+
+        p {
+            font-weight: 700;
+            font-family: var(--font-ui);
+            text-transform: uppercase;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+        }
+    }
