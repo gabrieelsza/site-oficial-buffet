@@ -17,14 +17,15 @@ function initSwiper() {
         freeMode: true,
         // when window width is >= 320px
         breakpoints: {
-            400: {
+            320: {
                 slidesPerView: 1.5,
                 spaceBetween: 20
             },
             // when window width is >= 480px
             800: {
-                slidesPerView: 2.7,
-                spaceBetween: 15
+                slidesPerView: 2.625,
+                spaceBetween: 15,
+                centeredSlides: true,
             },
         }
     });

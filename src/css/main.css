@@ -22,7 +22,8 @@ article {
         flex-direction: column;
 
         img {
-            width: clamp(80%, 50vw, 600px);
+                   width: clamp(35%, 50vw, 600px);
+
         }
     }
     
@@ -38,7 +39,7 @@ article {
             text-align: center;
             font-family: var(--font-script);
             color: var(--color-accent-orange);
-            font-size: 6rem;
+            font-size: clamp(4rem, 5vw, 4.3rem);
         }
 
         p {
@@ -53,12 +54,15 @@ article {
 
 .service {
     width: 100%;
+    
     .title {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
         align-items: end;
+        justify-content: flex-start;
         padding: 2rem 10%;
+        position: relative;
         
         h2 {
             text-transform: uppercase;
@@ -68,13 +72,15 @@ article {
         }
         
         p {
-            margin-right: 15%;
-            margin-top: -4%;
+            flex-wrap: nowrap;
             font-size: 2.5rem;
             color: var(--color-accent-orange);
             font-family: var(--font-script);
             font-size: clamp(3rem, 5vw, 4.3rem);
-          }
+            position: absolute;
+            top: 80px;
+            right: 22%;
+        }
     }
     
     .services {
@@ -147,7 +153,8 @@ article {
             justify-content: flex-end;
             align-items: end;
             padding: 2rem 10%;
-            
+            position: relative;
+
             h2 {
                 text-transform: uppercase;
                 color: var(--color-white);
@@ -156,11 +163,12 @@ article {
             }
             
             p {
-                margin-top: -4%;
                 font-size: 2.5rem;
                 color: var(--color-accent-orange);
                 font-family: var(--font-script);
                 font-size: clamp(3rem, 5vw, 4.3rem);
+                 position: absolute;
+                top: 80px;
             }
     }
 
@@ -169,9 +177,6 @@ article {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 2rem;
-        align-items: center;
-        justify-content: center;
-        margin: 0 20%;
     }
 
     .galeria-item {
@@ -179,11 +184,12 @@ article {
         height: 100%;
         object-fit: cover;
         border-radius: 18px;
-        display: block;
         }   
 
         .col-1, .col-2, .col-3{
             display: flex;
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
             gap: 2rem;
         }
@@ -267,7 +273,9 @@ article {
         display: flex;
         flex-direction: column;
         padding: 2rem 10%;
-        
+        position: relative;
+        margin-bottom: 4rem;
+
         h2 {
             text-transform: uppercase;
             color: var(--color-white);
@@ -276,12 +284,14 @@ article {
         }
         
         p {
-            margin-right: 168px;
-            margin-top: -4%;
+            width: 100%;
+            flex-wrap: nowrap;
             font-size: 2.5rem;
             color: var(--color-accent-orange);
             font-family: var(--font-script);
             font-size: clamp(3rem, 5vw, 4.3rem);
+            position: absolute;
+            top: 80px;
           }
     }
 
@@ -290,7 +300,7 @@ article {
         .testimony-cards {
             margin: 2rem 0 4rem 2rem;
             padding: 1rem;
-            width: 80%;
+            width: 77%;
             display: flex;
             flex-direction: row;
             
@@ -486,7 +496,8 @@ article {
         
         .galeria-grid {
             grid-template-columns: repeat(2, 330px);
-            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
         }
 
         .col-1, .col-2 {
@@ -540,7 +551,8 @@ article {
         .galeria-grid {
             grid-template-columns: repeat(3, 320px);
             grid-template-rows: 3;
-            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
         } 
 
         .col-3 {
@@ -647,5 +659,18 @@ article {
             }
 
     }
+    }
+
+    .title {
+        h2 {
+
+        }
+
+        .subtitle  {
+            p {
+                margin-top: -3%;
+            }
+        }
+
     }
 }
