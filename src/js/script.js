@@ -18,12 +18,12 @@ function initSwiper() {
         // when window width is >= 320px
         breakpoints: {
             400: {
-                slidesPerView: 1.712,
+                slidesPerView: 1.5,
                 spaceBetween: 20
             },
             // when window width is >= 480px
             800: {
-                slidesPerView: 2.6,
+                slidesPerView: 2.7,
                 spaceBetween: 15
             },
         }

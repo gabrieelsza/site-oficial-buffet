@@ -16,7 +16,24 @@ article {
 .about {
     margin-top: 2rem;
 
+    .about-me {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: clamp(80%, 50vw, 600px);
+        }
+    }
+    
+    
     .about-profesional {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
         h1 {
             text-align: center;
             font-family: var(--font-script);
@@ -376,7 +393,7 @@ article {
             gap: 1rem;
             width: 72%;
 
-            &.names {
+            &.names, &.servicesAndEmail{
                 flex-direction: column;
                 width: 100%;
                 align-items: center;
