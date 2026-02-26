@@ -22,7 +22,7 @@ article {
         flex-direction: column;
 
         img {
-                   width: clamp(35%, 50vw, 600px);
+            width: clamp(35%, 50vw, 600px);
 
         }
     }
@@ -39,7 +39,7 @@ article {
             text-align: center;
             font-family: var(--font-script);
             color: var(--color-accent-orange);
-            font-size: clamp(4rem, 5vw, 4.3rem);
+            font-size: clamp(4rem, 5vw, 6rem);
         }
 
         p {
@@ -83,12 +83,12 @@ article {
     }
     
     .services {
-        width: 100%;
+        width: 80%;
         overflow: hidden;
-        margin: 0 0 4rem 0;
         height: 100%;
         
         .cards {
+            width: 100%;
             padding: 2rem;
             display: flex;
             margin: 0 auto;
@@ -176,12 +176,11 @@ article {
         margin: 5rem auto;
 
         .content-dishes {
+            width: 100%;
             display: flex;
             align-items: center;
-            justify-content: center;
             gap: 3rem;
             padding: 2rem;
-            min-width: 300px;
             
             .dishes {
                 max-width: 300px;
@@ -271,6 +270,8 @@ article {
             border-radius: 2rem;
             opacity: .5;
             transition: .3s ease;
+            min-width: 320px;
+            max-width: 320px;
 
             &:hover {
                 opacity: 1;
@@ -282,35 +283,29 @@ article {
         }
    
         .image-1 {
-            width: 322px;
             height: 557px;
         }
         
         .image-2 {
-            width: 322px;
             height: 373px;
         }
         
         .image-3 {
-            width: 330px;
             height: 260px;
             grid-column-start: 1;
             grid-column-end: 2;
         }
+
         .image-4 {
-            width: 330px;
             height: 387px;
         }
         .image-5 {     
-            width: 330px;
             height: 360px;
         }
         .image-6 {
-            width: 330px;
             height: 404px;
         }
         .image-7 {
-            width: 330px;
             height: 527px;
         }
 

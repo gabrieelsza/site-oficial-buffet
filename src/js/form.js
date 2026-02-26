@@ -57,31 +57,4 @@ document.getElementById('contact-form').addEventListener("submit", function (eve
             submitButton.disabled = false; 
         })
 
-    console.log(serviceForm.value)
-    console.log(descService.value)
-})
-
-var swiperDesk = new Swiper(".mySwiperDesk", {
-    slidesPerView: 1.2,
-    spaceBetween: 30,
-    centeredSlides: true,
-    centeredSlidesBounds: true,
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        // when window width is >= 480px
-        1200: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-            centeredSlides: false,
-        }
-    },
-}
-);
-
+}); 

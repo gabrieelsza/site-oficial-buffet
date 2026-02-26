@@ -1,40 +1,3 @@
-// const morePhotos = document.getElementById("#more-photo");
-// const galeriaPhotos = document.getElementById("#galeria-grid");
-
-// console.log(galeriaPhotos)
-
-
-// morePhotos.addEventListener("click", () => {
-// })
-
-// function fillPhotos() {
-//     const divPhotos = document.createElement("div");
-//     divPhotos.classList.add("col-1");
-
-//     divPhotos.innerHTML = `
-//             <div class="col-1">
-//                     <img src="./src/image/buffet.jpg" alt="" class="image-1" class="galeria-item">
-//                     <img src="./src/image/image-buffet-pãos.jpg" alt="" class="image-2" class="galeria-item">
-//                 </div>
-//                 <div class="col-2">
-//                     <img src="./src/image/image-buffet-exempla-luxo.jpg" alt="" class="image-3" class="galeria-item">
-//                     <img src="./src/image/image-buffet-mesa - Copy.jpg" alt="" class="image-4" class="galeria-item">
-//                     <img src="./src/image/image-buffet-frango - Copy.jpg" alt="" class="image-5" class="galeria-item">
-//                 </div>
-//                 <div class="col-3">
-//                     <img src="./src/image/image-buffet-sobremesa - Copy.jpg" alt="" class="image-6"
-//                         class="galeria-item">
-//                     <img src="./src/image/image-buffet-suportes.jpg" alt="" class="image-7" class="galeria-item">
-//                 </div>
-
-//     `
-//     galeriaPhotos.appendChild(divPhotos)
-// }
-
-// fillPhotos()]
-
-
-// Array com novas colunas/fotos (adicione mais aqui)
 const novasColunas = [
     {
         class: 'col-1',
@@ -70,11 +33,8 @@ const novasColunas = [
 
 let colunaAtual = 0;
 
-const morePhotos = document.getElementById('more-photo'); // Sem #
-const galeriaPhotos = document.getElementById('galeria-grid'); // Sem #
-
-console.log(morePhotos)
-console.log(galeriaPhotos)
+const morePhotos = document.getElementById('more-photo');
+const galeriaPhotos = document.getElementById('galeria-grid'); 
 
 morePhotos.addEventListener('click', () => {
     console.log("Ok")

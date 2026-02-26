@@ -6,49 +6,5 @@ btnMobile.addEventListener("click", () => {
     navLinks.classList.toggle("show");
     iconBtn.classList.toggle('fa-times')
     iconBtn.classList.toggle('fa-bars')
+    iconBtn.style.color = "#002C22"; 
 });
-
-let swiper;
-
-function initSwiper() {
-    if (window.innerWidth >= 1440) return; // Desktop: não inicia
-
-    swiper = new Swiper(".mySwiper", {
-        freeMode: true,
-        // when window width is >= 320px
-        breakpoints: {
-            320: {
-                slidesPerView: 1.2,
-                spaceBetween: 20,
-                centeredSlides: true,
-            },
-            // when window width is >= 480px
-            800: {
-                slidesPerView: 2.625,
-                spaceBetween: 15,
-                centeredSlides: true,
-            },
-        }
-    });
-}
-
-function destroySwiper() {
-    if (swiper) {
-        swiper.destroy(true, true);
-        swiper = null;
-    }
-}
-
-function checkSize() {
-    if (window.innerWidth <= 768 && !swiper) {
-        initSwiper();
-    } else if (window.innerWidth <= 1200) {
-        initSwiper(); 
-    } else {
-        destroySwiper();
-    }
-}
-
-
-checkSize();
-window.addEventListener('resize', checkSize);
