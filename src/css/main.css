@@ -173,7 +173,7 @@ article {
 
     .mySwiperDeskDishes {
         width: 80%;
-        margin: 5rem auto;
+        margin: 1rem auto;
 
         .content-dishes {
             width: 100%;
@@ -342,7 +342,7 @@ article {
         flex-direction: column;
         padding: 2rem 10%;
         position: relative;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
 
         h2 {
             text-transform: uppercase;
@@ -366,7 +366,7 @@ article {
     .testimony-container {
 
         .testimony-cards {
-            margin: 2rem 0 4rem 2rem;
+            margin: 0rem 0 4rem 2rem;
             padding: 1rem;
             width: 77%;
             display: flex;

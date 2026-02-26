@@ -8,13 +8,15 @@ function initSwiper() {
 
     swiperService = new Swiper(".mySwiper", {
         freeMode: true,
-        // when window width is >= 320px
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
         breakpoints: {
             320: {
-                slidesPerView: 1.2,
+                slidesPerView: 1.1,
                 spaceBetween: 20,
             },
-            // when window width is >= 480px
             800: {
                 slidesPerView: 2.625,
                 spaceBetween: 15,
@@ -34,7 +36,7 @@ function checkSize() {
     if (window.innerWidth <= 768 && !swiperService) {
         initSwiper();
     } else if (window.innerWidth <= 1200) {
-        initSwiper(); 
+        initSwiper();
     } else {
         destroySwiper();
     }
@@ -73,11 +75,15 @@ var swiperTestemory = new Swiper(".mySwiperDesk", {
 // DISHES
 var swiperDishes = new Swiper(".mySwiperDeskDishes", {
     freeMode: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
 
     breakpoints: {
         420: {
-            slidesPerView: 1.2,
-            spaceBetween: 20
+            slidesPerView: 1.1,
+            spaceBetween: 25
         },
         820: {
             slidesPerView: 2,
